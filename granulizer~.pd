@@ -1,4 +1,4 @@
-#N canvas 13 577 1677 874 10;
+#N canvas 1009 301 1677 874 10;
 #X obj 528 322 s maxLength;
 #X msg 528 301 4410;
 #X obj 313 22 hsl 128 15 5 2000 0 0 empty tMeanH empty -2 -8 0 10 -262144
@@ -24,7 +24,7 @@
 #X obj 12 21 hsl 195 15 0 1 0 0 empty stMeanH empty -2 -8 0 10 -262144
 -1 -1 1940 1;
 #X obj 152 41 hsl 128 15 0 1 0 0 empty stRangeH empty -2 -8 0 10 -262144
--1 -1 4670 1;
+-1 -1 1270 1;
 #X text 213 63 start range;
 #X obj 9 41 s stMean;
 #X obj 149 61 s stRange;
@@ -66,7 +66,7 @@
 #X obj 619 290 delwrite~ tape1 5000;
 #X obj 230 629 dac~;
 #X obj 440 363 s octaveLock;
-#X obj 440 343 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 440 343 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 395 460 adc~;
 #X obj 439 321 s grainsNum;
@@ -77,13 +77,13 @@
 #X msg 161 147 0;
 #X msg 240 192 1;
 #X msg 201 192 0;
-#X obj 161 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 161 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 184 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 184 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 206 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 206 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 229 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 229 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 280 238 1;
 #X msg 241 238 0;
@@ -105,13 +105,13 @@
 #X obj 291 172 moses 6;
 #X obj 331 218 moses 7;
 #X obj 372 266 moses 8;
-#X obj 260 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 260 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 283 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 283 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 305 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 305 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 328 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 328 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 295 95 inlet;
 #X obj 184 385 outlet;
@@ -185,7 +185,7 @@
 #X obj 165 229 r volRange;
 #X obj 173 248 r panning;
 #X obj 182 266 r octaveLock;
-#X obj 102 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 102 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 275 51 r tMean;
 #X obj 282 71 r tRange;
@@ -199,7 +199,7 @@
 #X obj 341 228 r volRange;
 #X obj 349 247 r panning;
 #X obj 358 265 r octaveLock;
-#X obj 278 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 278 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 439 54 r tMean;
 #X obj 446 74 r tRange;
@@ -213,7 +213,7 @@
 #X obj 505 231 r volRange;
 #X obj 513 250 r panning;
 #X obj 522 268 r octaveLock;
-#X obj 442 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 442 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 615 53 r tMean;
 #X obj 622 73 r tRange;
@@ -227,7 +227,7 @@
 #X obj 681 230 r volRange;
 #X obj 689 249 r panning;
 #X obj 698 267 r octaveLock;
-#X obj 618 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 618 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 443 341 r tMean;
 #X obj 450 361 r tRange;
@@ -241,7 +241,7 @@
 #X obj 509 518 r volRange;
 #X obj 517 537 r panning;
 #X obj 526 555 r octaveLock;
-#X obj 446 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 446 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 619 340 r tMean;
 #X obj 626 360 r tRange;
@@ -255,7 +255,7 @@
 #X obj 685 517 r volRange;
 #X obj 693 536 r panning;
 #X obj 702 554 r octaveLock;
-#X obj 622 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 622 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 783 343 r tMean;
 #X obj 790 363 r tRange;
@@ -269,7 +269,7 @@
 #X obj 849 520 r volRange;
 #X obj 857 539 r panning;
 #X obj 866 557 r octaveLock;
-#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 959 342 r tMean;
 #X obj 966 362 r tRange;
@@ -283,7 +283,7 @@
 #X obj 1025 519 r volRange;
 #X obj 1033 538 r panning;
 #X obj 1042 556 r octaveLock;
-#X obj 962 318 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 962 318 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 421 645 outlet~;
 #X obj 352 646 outlet~;
@@ -431,13 +431,13 @@
 #X msg 161 147 0;
 #X msg 240 192 1;
 #X msg 201 192 0;
-#X obj 161 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 161 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 184 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 184 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 206 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 206 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 229 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 229 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 280 238 1;
 #X msg 241 238 0;
@@ -459,11 +459,11 @@
 #X obj 291 172 moses 6;
 #X obj 331 218 moses 7;
 #X obj 372 266 moses 8;
-#X obj 260 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 260 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 283 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 283 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 305 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 305 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 328 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -538,7 +538,7 @@
 #X obj 165 229 r volRange;
 #X obj 173 248 r panning;
 #X obj 182 266 r octaveLock;
-#X obj 102 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 102 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 275 51 r tMean;
 #X obj 282 71 r tRange;
@@ -552,7 +552,7 @@
 #X obj 341 228 r volRange;
 #X obj 349 247 r panning;
 #X obj 358 265 r octaveLock;
-#X obj 278 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 278 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 439 54 r tMean;
 #X obj 446 74 r tRange;
@@ -566,7 +566,7 @@
 #X obj 505 231 r volRange;
 #X obj 513 250 r panning;
 #X obj 522 268 r octaveLock;
-#X obj 442 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 442 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 615 53 r tMean;
 #X obj 622 73 r tRange;
@@ -580,7 +580,7 @@
 #X obj 681 230 r volRange;
 #X obj 689 249 r panning;
 #X obj 698 267 r octaveLock;
-#X obj 618 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 618 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 443 341 r tMean;
 #X obj 450 361 r tRange;
@@ -594,7 +594,7 @@
 #X obj 509 518 r volRange;
 #X obj 517 537 r panning;
 #X obj 526 555 r octaveLock;
-#X obj 446 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 446 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 619 340 r tMean;
 #X obj 626 360 r tRange;
@@ -608,7 +608,7 @@
 #X obj 685 517 r volRange;
 #X obj 693 536 r panning;
 #X obj 702 554 r octaveLock;
-#X obj 622 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 622 316 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 783 343 r tMean;
 #X obj 790 363 r tRange;
@@ -622,7 +622,7 @@
 #X obj 849 520 r volRange;
 #X obj 857 539 r panning;
 #X obj 866 557 r octaveLock;
-#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 786 319 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 959 342 r tMean;
 #X obj 966 362 r tRange;
@@ -1846,7 +1846,7 @@
 #X obj 242 234 - 16;
 #X obj 128 235 - 8;
 #X obj 442 260 hsl 128 15 0 32 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6000 1;
+-1 -1 0 1;
 #X obj 439 279 int;
 #X obj 211 392 r grainsNum;
 #X obj 329 394 r grainsNum;
@@ -1861,14 +1861,15 @@
 #X text 447 21 time min;
 #X text 494 89 volume min;
 #X text 728 40 speed min;
-#X obj 424 460 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 468 481 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 409 492 *~;
-#X text 378 438 use dry audio;
+#X text 371 418 use dry audio;
 #X obj 207 560 *~;
 #X obj 275 560 *~;
 #X obj 324 561 *~;
 #X obj 219 514 r granOnOff;
+#X obj 430 441 r dryAudio;
 #X connect 1 0 0 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
@@ -1947,3 +1948,4 @@
 #X connect 94 0 93 1;
 #X connect 94 0 92 1;
 #X connect 94 0 91 1;
+#X connect 95 0 88 0;
