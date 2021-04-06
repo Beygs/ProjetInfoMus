@@ -1,23 +1,11 @@
-#N canvas 1093 63 1220 768 12;
-#X declare -path modules;
-#X declare -path sounds;
-#X declare -path lib;
-#X obj 27 24 declare -path modules;
-#X obj 27 48 declare -path sounds;
-#X obj 27 98 loadbang;
-#X msg 27 121 dsp 1;
-#X obj 27 145 s pd;
-#X obj 27 72 declare -path lib;
-#X obj 333 260 loop;
-#X obj 333 168 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 334 291 dac~;
-#X obj 333 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#N canvas 532 102 1220 768 12;
+#X declare -path loopers;
+#X obj 27 55 loadbang;
+#X msg 27 78 dsp 1;
+#X obj 27 102 s pd;
 #X obj 80 331 sequencer;
-#X connect 2 0 3 0;
-#X connect 3 0 4 0;
-#X connect 6 0 8 0;
-#X connect 6 0 8 1;
-#X connect 7 0 6 1;
-#X connect 9 0 6 0;
+#X obj 27 24 declare -path loopers;
+#X obj 872 116 wavetable~;
+#X obj 899 182 granulizer~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
