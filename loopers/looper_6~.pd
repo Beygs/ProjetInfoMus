@@ -7881,7 +7881,7 @@
 #X obj 363 342 t f f;
 #X obj 310 389 expr 1000 / $f1;
 #X msg 203 409 0;
-#X obj 424 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 438 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 439 400 0;
 #X obj 326 115 inlet;
@@ -15793,6 +15793,9 @@
 #X obj 141 572 *~ 0;
 #X obj 66 512 r~ rightGran;
 #X obj 67 539 r~ rightWave;
+#X msg 373 41 \; audioData6r sinesum 441000 0 \; audioData6l sinesum
+441000 0 \;;
+#X obj 503 337 r clock;
 #X connect 0 0 36 0;
 #X connect 1 0 36 0;
 #X connect 3 0 4 0;
@@ -15800,6 +15803,7 @@
 #X connect 4 0 0 0;
 #X connect 4 0 24 0;
 #X connect 4 0 47 0;
+#X connect 4 0 55 0;
 #X connect 5 0 1 0;
 #X connect 5 0 25 0;
 #X connect 5 0 41 0;
@@ -15858,4 +15862,5 @@
 #X connect 52 0 29 0;
 #X connect 53 0 52 0;
 #X connect 54 0 52 0;
+#X connect 56 0 13 0;
 #X coords 0 1009 1 1008 30 30 0;
