@@ -1,4 +1,4 @@
-#N canvas 958 190 1677 874 10;
+#N canvas 61 235 1677 874 10;
 #X obj 528 322 s maxLength;
 #X msg 528 301 4410;
 #X obj 313 22 hsl 128 15 5 2000 0 0 empty tMeanH empty -2 -8 0 10 -262144
@@ -1871,6 +1871,10 @@
 #X obj 430 441 r dryAudio;
 #X obj 185 664 s~ rightGran;
 #X obj 271 664 s~ leftGran;
+#X obj 181 605 *~ 5;
+#X obj 216 626 *~ 5;
+#X obj 271 608 *~ 5;
+#X obj 323 591 *~ 5;
 #X connect 1 0 0 0;
 #X connect 2 0 5 0;
 #X connect 3 0 6 0;
@@ -1942,11 +1946,15 @@
 #X connect 81 0 79 0;
 #X connect 87 0 88 1;
 #X connect 88 0 92 0;
-#X connect 90 0 95 0;
-#X connect 91 0 96 0;
-#X connect 92 0 95 0;
-#X connect 92 0 96 0;
+#X connect 90 0 97 0;
+#X connect 91 0 99 0;
+#X connect 92 0 98 0;
+#X connect 92 0 100 0;
 #X connect 93 0 92 1;
 #X connect 93 0 91 1;
 #X connect 93 0 90 1;
 #X connect 94 0 87 0;
+#X connect 97 0 95 0;
+#X connect 98 0 95 0;
+#X connect 99 0 96 0;
+#X connect 100 0 96 0;
