@@ -1,7 +1,8 @@
 # ProjetInfoMus
 
-## Description du projet
 ***
+## Description du projet
+
 "Séquenceur" de huit boucles synchronisées sur la première contrôlables en MIDI via l'application TouchOSC (iPad).<br>
 Pour jouer sur ce séquenceur, on a le choix entre deux instruments (basés sur des patchs que j'ai récupérés sur internet) :
 - Granulizer, qui fait de la synthèse granulaire à partir de ce qu'il reçoit comme signal audio (via un micro).
@@ -27,8 +28,9 @@ Wavetable
 ![Image text](/screenshots/loop.png)
 Looper 1
 
-## Issues
 ***
+## Issues
+
 J'ai eu des soucis techniques avec mon ordinateur, donc je n'ai pas pu faire de vidéo pour le moment.<br>
 De plus, bien que le Granulizer fonctionnait parfaitement seul, il ne fonctionne pas dans le patch sur mon ordinateur, à mon avis à cause d'une surcharge du CPU.<br>
 Je n'ai malheureusement pas pu tester le patch sur un autre ordinateur pour voir si le soucis venait du mien (qui commence à se faire vieux).<br>
