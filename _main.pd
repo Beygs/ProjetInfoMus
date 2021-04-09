@@ -1,0 +1,11 @@
+#N canvas 532 102 1220 768 12;
+#X declare -path loopers;
+#X obj 27 55 loadbang;
+#X msg 27 78 dsp 1;
+#X obj 27 102 s pd;
+#X obj 80 331 sequencer;
+#X obj 27 24 declare -path loopers;
+#X obj 872 116 wavetable~;
+#X obj 899 182 granulizer~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
